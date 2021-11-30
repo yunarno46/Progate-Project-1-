@@ -20,7 +20,7 @@
         }
 
         .intro {
-            padding: 300px 600px 500px 100px;
+            padding: 300px 600px 500px 50px;
             color: aliceblue;
             text-align: justify;
             line-height: 30px;
@@ -36,7 +36,7 @@
             padding: 5% 0;
         }
 
-        .top-title  {
+        .top-title {
             text-align: center;
             margin-bottom: 150px;
         }
@@ -45,15 +45,16 @@
             text-align: center;
             margin-top: 200px;
         }
-        
-        .top-title h2, .middle-title h2 {
+
+        .top-title h2,
+        .middle-title h2 {
             margin-bottom: 100px;
             font-family: 'Londrina Shadow';
             font-size: 2.5vw;
-            color: rgba(50,84,128,255);
+            color: rgba(50, 84, 128, 255);
         }
 
-        
+
         .span_1_of_first {
             width: 22.3%;
         }
@@ -89,13 +90,63 @@
             padding: 20px;
             font-family: 'Cabin';
         }
+
+        @media screen and (max-width: 800px) {
+            .header a {
+                float: none;
+                display: block;
+                text-align: left;
+                font-size: 12px;
+            }
+
+            .header-right {
+                float: none;
+            }
+
+            .intro {
+                padding: 220px 80px 100px 20px;
+                line-height: 30px;
+            }
+
+            .intro p {
+                font-size: 16px;
+            }
+
+            .top-title h2,
+            .middle-title h2 {
+                font-size: 20px;
+                margin-bottom: 50px;
+            }
+
+            .span_1_of_4 {
+                width: 44.6%;
+            }
+
+            .span_1_of_first {
+                width: 44.6%;
+            }
+
+            .col_1_of_4 img {
+                width: 50px;
+            }
+
+            .col_1_of_4 h3 {
+                font-size: 14px;
+            }
+
+            .desc p {
+                font-size: 12px;
+                margin-bottom: 50px;
+            }
+
+        }
     </style>
 </head>
 
 <body>
     <div class="header">
         <a href="index.html">
-            <img class="logo" src="logo.jpeg" alt="">
+            <img class="logo" src="Logo A16 png.png" alt="">
             <p>Tour & Travel</p>
         </a>
         <div class="header-right">
@@ -160,26 +211,26 @@
 
         <div class="content-middle">
             <div class="middle-title">
-                <h2>Destinasi Wisata</h2>                
+                <h2>Destinasi Wisata</h2>
             </div>
             <div class="slideshow-container">
 
                 <div class="mySlides fade">
-                  <div class="numbertext">1 / 10</div>
-                  <img src="assets/Air-Terjun-Pria-Laot.jpg" style="width:100%">
-                  <div class="text">Air Terjun Pria Laot</div>
+                    <div class="numbertext">1 / 10</div>
+                    <img src="assets/Air-Terjun-Pria-Laot.jpg" style="width:100%">
+                    <div class="text">Air Terjun Pria Laot</div>
                 </div>
-              
+
                 <div class="mySlides fade">
-                  <div class="numbertext">2 / 10</div>
-                  <img src="assets/Benteng-Jepang.jpg" style="width:100%">
-                  <div class="text">Benteng Jepang</div>
+                    <div class="numbertext">2 / 10</div>
+                    <img src="assets/Benteng-Jepang.jpg" style="width:100%">
+                    <div class="text">Benteng Jepang</div>
                 </div>
-              
+
                 <div class="mySlides fade">
-                  <div class="numbertext">3 / 10</div>
-                  <img src="assets/Danau-Aneuk-Laot.webp" style="width:100%">
-                  <div class="text">Danau Aneuk Laot</div>
+                    <div class="numbertext">3 / 10</div>
+                    <img src="assets/Danau-Aneuk-Laot.webp" style="width:100%">
+                    <div class="text">Danau Aneuk Laot</div>
                 </div>
 
                 <div class="mySlides fade">
@@ -189,9 +240,9 @@
                 </div>
 
                 <div class="mySlides fade">
-                  <div class="numbertext">5 / 10</div>
-                  <img src="assets/Mercusuar-le-Meulee.jpg" style="width:100%">
-                  <div class="text">Mercusuar le Meulee</div>
+                    <div class="numbertext">5 / 10</div>
+                    <img src="assets/Mercusuar-le-Meulee.jpg" style="width:100%">
+                    <div class="text">Mercusuar le Meulee</div>
                 </div>
 
                 <div class="mySlides fade">
@@ -205,7 +256,7 @@
                     <img src="assets/Pantai-Kasih.jpg" style="width:100%">
                     <div class="text">Pantai Kasih</div>
                 </div>
-              
+
                 <div class="mySlides fade">
                     <div class="numbertext">8 / 10</div>
                     <img src="assets/Pantai-Pasir-Putih.jpg" style="width:100%">
@@ -216,20 +267,20 @@
                     <div class="numbertext">9 / 10</div>
                     <img src="assets/Pantai-Sumur-Tiga.jpg" style="width:100%">
                     <div class="text">Pantai Sumur Tiga</div>
-                  </div>
+                </div>
 
-                  <div class="mySlides fade">
+                <div class="mySlides fade">
                     <div class="numbertext">10 / 10</div>
                     <img src="assets/Pulau-Klah.jpg" style="width:100%">
                     <div class="text">Pulau-Klah</div>
-                  </div>
+                </div>
 
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
-              </div>
-              <br>
+            </div>
+            <br>
 
-              <div style="text-align:center">
+            <div style="text-align:center">
                 <span class="dot" onclick="currentSlide(1)"></span>
                 <span class="dot" onclick="currentSlide(2)"></span>
                 <span class="dot" onclick="currentSlide(3)"></span>
@@ -240,7 +291,7 @@
                 <span class="dot" onclick="currentSlide(8)"></span>
                 <span class="dot" onclick="currentSlide(9)"></span>
                 <span class="dot" onclick="currentSlide(10)"></span>
-              </div>
+            </div>
         </div>
     </div>
 
