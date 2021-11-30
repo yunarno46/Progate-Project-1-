@@ -1,191 +1,232 @@
 @import url('https://fonts.googleapis.com/css2?family=Codystar:wght@300;400&family=Fruktur&family=Londrina+Shadow&family=Balsamiq+Sans&family=Cabin&family=Kaushan+Script&family=Poiret+One&family=Special+Elite&display=swap');
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
+  margin: 0;
 }
 
 .header {
-    overflow: hidden;
-    background-color: white;
-    padding: 15px 10px;
+  overflow: hidden;
+  background-color: white;
+  padding: 15px 10px;
 }
 
 .header p {
-    font-family: 'Fruktur';
-    display: inline;
+  font-family: 'Fruktur';
+  display: inline;
 }
+
 .header a {
-    float: left;
-    text-align: center;
-    color: rgba(50,84,128,255);
-    font-size: 18px;
-    font-family: 'Codystar';
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 4px;
-    padding: 12px;
+  float: left;
+  text-align: center;
+  color: rgba(50, 84, 128, 255);
+  font-size: 18px;
+  font-family: 'Codystar';
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 4px;
+  padding: 12px;
 }
 
 .logo {
-    margin-left: 20px;
-    width: 70px;
+  margin-left: 20px;
+  width: 70px;
 }
 
 
 .header-right {
-    float: right;
+  float: right;
 }
 
 .header-right a {
-    margin-top: 25px;
-    margin-right: 60px;
-    margin-left: 20px;
+  margin-top: 25px;
+  margin-right: 60px;
+  margin-left: 20px;
 }
 
 .header-right a:hover {
-    background-color: rgba(50,84,128,255);
-    color: white;
+  background-color: rgba(50, 84, 128, 255);
+  color: white;
 }
 
 .slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+  border: 1px solid black;
+  opacity: 0.6;
+  background: black;
+  color: #f2f2f2;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px 40px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
   }
 
-  .mySlides {
-    display: none;
+  to {
+    opacity: 1
   }
-  
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-  
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
-  
- .text {
-    border: 1px solid black;
-    background: black;
-    color: #f2f2f2;
-    font-size: 15px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-  }
-  
- .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-  
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px 40px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  
-  .active, .dot:hover {
-    background-color: #717171;
-  }
-  
-  .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
-  @-webkit-keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
-  
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
   }
 
-.footer {    
-    background-color: rgba(50,84,128,255);
-    color: white;
-    padding: 0.5% 0;
+  to {
+    opacity: 1
+  }
+}
+
+.footer {
+  background-color: rgba(50, 84, 128, 255);
+  color: white;
+  padding: 0.5% 0;
+  font-family: 'Cabin';
 }
 
 .wrap {
-    width: 95%;
-    margin: 0 auto;
+  width: 95%;
+  margin: 0 auto;
 }
 
 .footer-left {
-    padding-top: 7px;
-    float: left;
+  padding-top: 7px;
+  float: left;
 }
 
 .footer-right {
-    float: right;
+  float: right;
 }
 
 .footer-right ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .footer-right ul li {
-    display: inline-block;
-    margin-left: 40px;
+  display: inline-block;
+  margin-left: 40px;
 }
 
 .footer-right ul li a {
-    display: block;
-    letter-spacing: 1px;
-    font-size: 0.89em;
-    color: white;
-    margin: 13px 10px;
-    text-decoration: none;
+  display: block;
+  letter-spacing: 1px;
+  font-size: 0.89em;
+  color: white;
+  margin: 13px 10px;
+  text-decoration: none;
 }
 
 .footer-right a:hover {
-    color: rgba(50,84,128,255);
-    background-color: white;
-    border: 1px solid white;
-    border-radius: 8px;
-    padding: 5px;
+  color: rgba(50, 84, 128, 255);
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 5px;
 }
 
 .clear {
-    clear: both;
+  clear: both;
+}
+
+@media screen and (max-width: 800px) {
+  .text {
+    font-size: 12px;
+  }
+
+  .wrap {
+    width: 100%;
+  }
+
+  .footer {
+    font-size: 16px;
+  }
+
+  .footer-left,
+  .footer-right {
+    text-align: center;
+    float: none;
+  }
+
+  .footer-right ul li {
+    margin: 0 0 10px;
+  }
+
 }
