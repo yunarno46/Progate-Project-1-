@@ -8,7 +8,143 @@
     <title>Products - A Sixteen Travel & Tour</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">   
-</head>
+    
+    <style>
+        .top {
+            padding: 180px 0 100px 0;
+            height: 700px;
+            background-repeat: no-repeat;
+            background: url('assets/image02.jpg');
+            background-size: cover;
+            background-position: center center;
+            text-align: center;
+            font-family: 'Londrina Shadow';
+            font-weight: lighter;
+            color: rgb(210, 210, 210);
+            width: 100%;
+            
+            color: aliceblue;
+            text-align: justify;
+            line-height: 30px;
+            
+        }
+
+        .top h2 {
+            opacity: 0.7;
+            font-size: 45px;
+            letter-spacing: 5px;
+            margin-bottom: 10px;
+        }
+
+        .top p {
+            opacity: 0.7;
+            margin-bottom: 3px;
+            font-size: 30px;
+        }
+
+        .btn-wrapper{
+            text-align: center;
+            margin: 20px 0;
+            
+        }
+
+        .btn {
+            padding: 12px 24px;
+            color: white;
+            display: inline-block;
+            opacity: 0.8;
+            border-radius: 4px;
+            text-align: center;
+            font-family: lucida sans Regular;
+            margin: 5%;
+        }
+
+        .btn:hover {
+            opacity: 1;
+        }
+
+        .fa {
+            margin-right: 5px;
+        }
+
+        .paket-tour {
+            padding-bottom: 80px;
+            padding-left: 5%;
+            padding-right: 5%;
+            background-color: #f7f7f7;
+            text-align: center;
+        }
+
+        .heading {
+            padding-top: 80px;
+            padding-bottom: 50px;
+            color: #5f5d60;
+            background-color: rgb(157, 187, 241);
+        }
+
+        .heading h2 ,h3  {
+            font-weight: normal;
+            text-align: center;
+            width: 100%;
+        }
+
+        .menu-icon {
+            color: white;
+            float: right;
+            font-size: 25px;
+            padding: 21px 0;   
+            display: none;
+        }
+
+        .paket {
+            float: left;
+            width: 25%;   
+        }
+
+        .paket-icon {
+            position: relative;
+        }
+
+        .paket-icon p {
+            position: absolute;
+            top: 55%;
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+            font-family: 'Cabin';
+                       
+        }
+
+        .text-paket {
+            width: 80%;
+            display: inline-block;
+            margin-top: 15px;
+            font-size: 15px;
+          
+        }
+
+        .pemesanan-tour {
+            border-bottom: 1px solid #f7f7f7;
+            padding-bottom: 80px;
+            text-align: center;
+        }
+
+        .pemesanan {
+            padding: 15px 40px;
+            background-color: #5dca88;
+            cursor: pointer;
+            box-shadow: 0 7px #1a7940;
+        }
+
+        .pemesanan:active {
+            position: relative;
+            top: 7px;
+            box-shadow: none;
+        }  
+
+
+    </style>
+    </head>
 
 <body>
     <div class="header">
@@ -23,8 +159,67 @@
             <a href="contact.html">CONTACT</a>
             <a href="about.html">ABOUT</a>
         </div>
-    </div>    
-
+    </div>
+    <div class="top">
+        <div class="content">
+            <h2>A Sixteen Travel & Tour</h2>
+            <h2>Pilihan Tepat Untuk Menemani Liburan Anda.</h2>
+            <p>Kami Memberikan Konsep Perjalan Yang Berbeda Yang Belum Pernah Anda Rasakan Sebelumnya.</p>
+        </div>  
+    </div>
+    <div class="paket-wisata">
+        <div class="content">
+            <div class="heading">
+                <h2>PILIHAN PAKET WISATA</h2>
+            </div>
+            <div class="paket-tour">
+                <div class="paket">
+                    <div class="paket-icon">
+                        <img src="https://img.icons8.com/clouds/100/000000/beach.png"/>
+                        <p>Tour 2 Hari 1 Malam</p>
+                    </div>
+                    <br>
+                    <p class="text-paket">Tour Singkat Mengelilingi Kota Sabang Selama 2 Hari 1 Malam.</p>
+                </div>
+                <div class="paket">
+                    <div class="paket-icon">
+                        <img src="https://img.icons8.com/clouds/100/000000/passenger-with-baggage.png"/>
+                        <p>Tour 3 Hari 2 Malam</p>
+                    </div>
+                    <br>
+                    <p class="text-paket">Tour Keliling Kota Sabang Selama 3 Hari 2 Malam.</p>
+                </div>
+                <div class="paket">
+                    <div class="paket-icon">
+                        <img src="https://img.icons8.com/clouds/100/000000/street-view.png"/>
+                        <p>Tour 4 Hari 3 Malam</p>
+                    </div>
+                    <br>
+                    <p class="text-paket">Tour Keliling Kota Sabang Selama 4 Hari 3 Malam.</p>
+                </div>
+                <div class="paket">
+                    <div class="paket-icon">
+                        <img src="https://img.icons8.com/clouds/100/000000/suitcase.png"/>
+                        <p>Tour 5 Hari 4 Malam</p>
+                    </div>
+                    <br>    
+                    <p class="text-paket">Tour Keliling Kota Sabang Selama 5 Hari 4 Malam.</p>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        </div>
+        <div class="pemesanan-tour">
+            <div class="content">
+                <div class="heading">
+                    <h2>Apakah Anda Siap Untuk Liburan</h2>
+                    <h3>Ayo, Pilih Paket Tour Anda</h3>
+                </div>
+                <div class="btn-wrapper">
+                    <a href="#" class="btn pemesanan"><span class="fa fa-pemesanan"></span>Pemesanan</a>
+                </div>
+            </div>
+        </div>
     <div class="footer">
         <div class="wrap">
             <div class="footer-left">
