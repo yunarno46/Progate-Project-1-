@@ -224,7 +224,61 @@ body {
     opacity: 1
   }
 }
-
+/*contact*/
+  input, textarea{
+    width:400px;
+    margin-top:10px;
+    margin-bottom:30px;
+    padding:20px;
+    font-size:18px;
+    border:1px solid #dee7ec;
+  }
+  .main{
+    padding: 180px 0 100px 0;
+    background-image: url(https://raw.githubusercontent.com/yunarno46/Progate-Project-1-/main/Background%20Contact%20us.jpg?token=AWWETC5XYCW3U3PZKUZ6WQ3BVENIW);
+    background-size: cover;
+    color: rgb(10, 10, 10);
+    
+  }
+  .box{
+    margin:auto; 
+  }
+  
+  .contact-form{
+    background-color: rgba(17, 17, 37, 0.61);;
+    float:left;
+    width:35%;
+    border-radius:4px;
+    padding-left:35px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 2px;
+    margin-left:2cm;
+    margin-bottom: 1.4cm;
+  }
+  
+  
+  .maskot{
+    background-color: #ffffff;
+   float: right; 
+    margin-right:5cm;
+    margin-bottom: 2cm;
+  }
+  .contact-submit{
+    background-color:#dee7ec;
+    color:#889eab;
+    padding: 15px 40px;
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  .contact-submit:hover{
+      opacity: 1;
+  }
+  .contact-submit:active{
+    position:relative;
+    top:4px;
+  }
+/*end cotact*/
 .footer {
   background-color: rgba(50, 84, 128, 255);
   color: white;
